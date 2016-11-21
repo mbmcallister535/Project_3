@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_place"
     android:layout_width="match_parent"
@@ -9,5 +10,54 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.miggle.myapplication.PlaceActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/badowers"
+        android:id="@+id/bannerView"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/whitelocation"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/locationView"
+        android:layout_alignBottom="@+id/bannerView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/review"
+        android:id="@+id/reviewitem"
+        android:layout_below="@+id/postPhoto"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/postphoto"
+        android:id="@+id/postPhoto"
+        android:layout_below="@+id/postitem"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/postitem"
+        android:id="@+id/postitem"
+        android:layout_below="@+id/checkinView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/checkin"
+        android:id="@+id/checkinView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
