@@ -19,7 +19,11 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".PlaceActivity" />
-        <activity android:name=".PointsActivity"></activity>
+        <activity android:name=".PointsActivity" />
+        <activity android:name=".WomenFragment" />
+        <activity android:name=".MenFragment" />
+        <activity android:name=".HomeGoodsFragment" />
+        <activity android:name=".PointsFragment"></activity>
     </application>
 
 </manifest>
