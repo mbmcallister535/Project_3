@@ -1,5 +1,6 @@
 package com.example.miggle.myapplication;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.icu.text.BreakIterator;
 import android.location.Location;
@@ -13,6 +14,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -101,6 +103,12 @@ public class MainActivity extends ActionBarActivity implements
     protected void onStart() {
         mGoogleApiClient.connect();
         super.onStart();
+    }
+
+    public void debugPoints(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, PointsActivity.class);
+        startActivity(intent);
     }
 
     protected void onStop() {
