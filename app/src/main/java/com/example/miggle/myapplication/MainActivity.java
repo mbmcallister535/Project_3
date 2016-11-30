@@ -105,11 +105,6 @@ public class MainActivity extends ActionBarActivity implements
         super.onStart();
     }
 
-    public void debugPoints(View view)
-    {
-        Intent intent = new Intent(MainActivity.this, PointsActivity.class);
-        startActivity(intent);
-    }
 
     protected void onStop() {
         mGoogleApiClient.disconnect();
