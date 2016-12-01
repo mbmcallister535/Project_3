@@ -10,13 +10,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.miggle.myapplication.WomenFragment">
 
-    <TextView
-        android:text="We are in the women Fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="214dp"
-        android:id="@+id/textView2" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
 </RelativeLayout>
