@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/lightblue">
 
     <Button
         android:text="Log In With Facebook"
@@ -10,7 +12,15 @@
         android:id="@+id/loginButton"
         android:background="#3b5998"
         android:textColor="#ffffff"
-        android:layout_marginBottom="197dp"
+        android:layout_marginBottom="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/appiconnn"
+        android:id="@+id/appIcon"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
