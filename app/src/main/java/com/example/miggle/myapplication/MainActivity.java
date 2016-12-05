@@ -123,4 +123,12 @@ public class MainActivity extends ActionBarActivity implements
     {
         return mLongitudeText;
     }
+
+    public void toAbout(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, About.class);
+        startActivity(intent);
+    }
 }
+
+

@@ -23,7 +23,8 @@
         <activity android:name=".WomenFragment" />
         <activity android:name=".MenFragment" />
         <activity android:name=".HomeGoodsFragment" />
-        <activity android:name=".PointsFragment"></activity>
+        <activity android:name=".PointsFragment" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
