@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity implements
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Women"));
         tabLayout.addTab(tabLayout.newTab().setText("Men"));
-        tabLayout.addTab(tabLayout.newTab().setText("Home Goods"));
+        tabLayout.addTab(tabLayout.newTab().setText("Home"));
         tabLayout.addTab(tabLayout.newTab().setText("Points"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
