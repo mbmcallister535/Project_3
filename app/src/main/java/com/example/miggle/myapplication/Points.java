@@ -7,7 +7,7 @@ package com.example.miggle.myapplication;
 public class Points {
     private String boutique;
     private String description;
-    private String img;
+    private int img;
 
     public String getBoutique() {
         return boutique;
@@ -25,11 +25,11 @@ public class Points {
         this.description = description;
     }
 
-    public String getImg() {
+    public int getImg() {
         return img;
     }
 
-    public void setImg(String img) {
+    public void setImg(int img) {
         this.img = img;
     }
 }

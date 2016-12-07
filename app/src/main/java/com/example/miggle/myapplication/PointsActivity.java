@@ -20,12 +20,12 @@ public class PointsActivity extends ListActivity {
 
         Points first = new Points();
         first.setBoutique("Aimee");
-        first.setImg("/Users/truewheeldon/Desktop/Project_3/app/src/main/res/drawable/aimee.png");
+        first.setImg(1);
         first.setDescription("A cute little boutique selling women's clothing!");
 
         Points second = new Points();
         second.setBoutique("Zombie Burger");
-        second.setImg("/Users/truewheeldon/Desktop/Project_3/app/src/main/res/drawable/aimee.png");
+        second.setImg(1);
         second.setDescription("A place to get zombie related burgers in the east village!");
 
         points = new Points[]{first, second};

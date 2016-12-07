@@ -14,24 +14,33 @@ public class HomeGoodsFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Points first = new Points();
-        first.setBoutique("Aimee");
-        first.setImg("/Users/truewheeldon/Desktop/Project_3/app/src/main/res/drawable/aimee.png");
-        first.setDescription("A cute little boutique selling women's clothing!");
+        first.setBoutique("Back Allet Bargain");
+        first.setImg(R.drawable.backalletbargain);
+        first.setDescription("Insert Description Here");
 
         Points second = new Points();
-        second.setBoutique("Zombie Burger");
-        second.setImg("/Users/truewheeldon/Desktop/Project_3/app/src/main/res/drawable/aimee.png");
-        second.setDescription("A place to get zombie related burgers in the east village!");
+        second.setBoutique("Funky Find");
+        second.setImg(R.drawable.funkyfind);
+        second.setDescription("Insert Description Here");
 
-        points = new Points[]{first, second};
+        Points third = new Points();
+        third.setBoutique(("Hinge"));
+        third.setImg(R.drawable.hinge);
+        third.setDescription("Insert Description Here");
+
+        Points fourth = new Points();
+        fourth.setBoutique("byDesign");
+        fourth.setImg(R.drawable.bydesign);
+        fourth.setDescription("Insert Description Here");
+
+        points = new Points[]{first, second,third,fourth};
 //        if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);
-
         View myView = inflater.inflate(R.layout.home_goods_fragment, container,false);
 
 
 
-        PointsAdapter pAdapter = new PointsAdapter(getActivity(), points);
+        MenWomenHomeAdapter pAdapter = new MenWomenHomeAdapter(getActivity(), points);
         setListAdapter(pAdapter);
 
         return myView;
