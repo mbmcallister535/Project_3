@@ -24,7 +24,8 @@
         <activity android:name=".MenFragment" />
         <activity android:name=".HomeGoodsFragment" />
         <activity android:name=".PointsFragment" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".RedeemActivity"></activity>
     </application>
 
 </manifest>
