@@ -19,21 +19,24 @@
 
         <TextView
             android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/boutique"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/description"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="35dp"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:ellipsize="end" />
 
         <TextView
             android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:id="@+id/boutique"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="65dp" />
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
 </LinearLayout>
