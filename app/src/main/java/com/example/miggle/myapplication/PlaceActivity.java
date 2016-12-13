@@ -74,7 +74,11 @@ public class PlaceActivity extends AppCompatActivity {
         scanReceipt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int count =  sharedPreferences.getInt(place.getBoutique(),0);
                 dispatchTakePictureIntent();
+                count += 10;
+                editor.putInt(place.getBoutique(), count);
+
             }
         });
         checkIn.setOnClickListener(new View.OnClickListener() {

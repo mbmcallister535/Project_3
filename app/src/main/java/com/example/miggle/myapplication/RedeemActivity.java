@@ -57,8 +57,11 @@ public class RedeemActivity extends Activity {
                     }
                     else
                     {
-                        Toast toast = Toast.makeText(getApplicationContext(), "You have a coupon", Toast.LENGTH_SHORT);
-                        toast.show();
+
+                        Intent intent = new Intent(view.getContext(),CouponActivity.class);
+                        intent.putExtra("Place", new Gson().toJson(place));
+                        view.getContext().startActivity(intent);
+
                     }
                 }
             }
