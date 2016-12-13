@@ -66,7 +66,7 @@ public class PlaceActivity extends AppCompatActivity {
         String activityPlaces = getIntent().getStringExtra("Place");
         final Points place = new Gson().fromJson(activityPlaces,Points.class);
         bannerView = (ImageView) findViewById(R.id.bannerView);
-        scanReceipt = (ImageView) findViewById((R.id.postPhoto));
+        scanReceipt = (ImageView) findViewById((R.id.postReceipt));
         checkIn = (ImageView) findViewById(R.id.checkinView);
         bannerView.setImageResource(place.getImg());
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
