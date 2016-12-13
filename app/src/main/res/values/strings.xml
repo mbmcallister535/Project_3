@@ -8,7 +8,7 @@
     <string name="postreceipt">Scan Receipt</string>
     <string name="postphoto">Post Photo</string>
     <string name="description">This is an image</string>
-    <string name="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget urna interdum metus iaculis hendrerit. In sit amet finibus diam, at accumsan magna. Ut non massa orci. Proin semper maximus tristique. Praesent semper turpis nec blandit commodo. Vivamus lobortis tempus tempor. Phasellus sed magna turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel lacus in mauris maximus pretium. Aliquam sit amet nisl pulvinar, porta est eu, interdum massa. Maecenas ut ante diam. Fusce volutpat, nulla nec fermentum volutpat, lorem lectus auctor neque, non blandit libero libero non metus. Aenean tincidunt ligula sed odio eleifend, et rutrum nisi condimentum.</string>
+    <string name="blurb">Boutique Book is an app that brings consumers and local businesses together through mutually beneficial offers and advertising. </string>
     <string name="profileImage">this is a profile image</string>
     <string name="aboutbutton">this button takes you to the about page</string>
     <!-- TODO: Remove or change this placeholder text -->

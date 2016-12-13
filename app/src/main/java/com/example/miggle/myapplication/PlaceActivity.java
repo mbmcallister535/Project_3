@@ -209,7 +209,7 @@ public class PlaceActivity extends AppCompatActivity {
                 }
                 else if(dist > 1.0)
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(),"You are to far away to check in",Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(),"You are too far away to check in",Toast.LENGTH_SHORT);
                     toast.show();
 
                 }
