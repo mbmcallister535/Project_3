@@ -20,7 +20,8 @@ public class CouponActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
         int coupon = sharedPreferences.getInt(place.getBoutique()+"10",0);
-        editor.putInt(place.getBoutique()+"10",coupon-1);
+        editor.putInt(place.getBoutique()+"10",0);
         editor.commit();
+
     }
 }

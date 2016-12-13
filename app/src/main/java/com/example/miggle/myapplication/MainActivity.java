@@ -1,6 +1,8 @@
 package com.example.miggle.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.icu.text.BreakIterator;
 import android.location.Location;
@@ -25,12 +27,19 @@ public class MainActivity extends ActionBarActivity implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private GoogleApiClient mGoogleApiClient;
     private Location mLastLocation;
-    private double mLatitudeText = 41.605501;
-    private double mLongitudeText = -93.6553193;
+    private double mLatitudeText = 41.58979;
+    private double mLongitudeText = -93.6815206;
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+        editor.putFloat("latitude",(float)mLatitudeText);
+        editor.putFloat("longitude",(float)mLongitudeText);
+        editor.commit();
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Women"));
         tabLayout.addTab(tabLayout.newTab().setText("Men"));
@@ -85,8 +94,13 @@ public class MainActivity extends ActionBarActivity implements
                 mGoogleApiClient);
         if (mLastLocation != null) {
             Log.v("Google Api Test", "mLastLocation not null");
-            mLatitudeText = mLastLocation.getLatitude();
+            mLatitudeText = Double.valueOf(mLastLocation.getLatitude());
             mLongitudeText = (Double.valueOf(mLastLocation.getLongitude()));
+            sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+            editor = sharedPreferences.edit();
+            editor.putFloat("latitude",(float)mLatitudeText);
+            editor.putFloat("longitude",(float)mLongitudeText);
+            editor.commit();
         }
         else
         {

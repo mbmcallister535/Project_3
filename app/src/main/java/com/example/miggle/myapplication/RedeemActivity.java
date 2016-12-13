@@ -42,6 +42,8 @@ public class RedeemActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int count = sharedPreferences.getInt(place.getBoutique(), 0);
                 int coupon = sharedPreferences.getInt(place.getBoutique()+"10",0);
+                editor.putInt(place.getBoutique()+"10",0);
+                editor.commit();
                 if(position == 0) {
                     if(coupon == 0) {
                         if (count >= 20) {
