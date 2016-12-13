@@ -42,7 +42,7 @@ public class MenWomenHomeAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(final int position, View convertView, ViewGroup parent){
         ViewHolder holder;
 
         if (convertView == null){
@@ -63,7 +63,7 @@ public class MenWomenHomeAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        Points points = myPoints[position];
+        final Points points = myPoints[position];
 
         holder.boutique.setText(points.getBoutique());
         holder.description.setText(points.getDescription());
@@ -72,7 +72,7 @@ public class MenWomenHomeAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),PlaceActivity.class);
-//                intent.putExtra("Place", new Gson().toJson(place));
+                intent.putExtra("Place", new Gson().toJson(points));
                 v.getContext().startActivity(intent);
             }
         });

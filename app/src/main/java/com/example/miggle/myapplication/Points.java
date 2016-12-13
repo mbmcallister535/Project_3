@@ -8,11 +8,13 @@ public class Points {
     private String boutique;
     private String description;
     private int img;
+    private double latitude;
+    private double longitude;
 
     public String getBoutique() {
         return boutique;
     }
-
+    public void setLocation(double latitude, double longitude) {this.latitude = latitude; this.longitude = longitude;}
     public void setBoutique(String boutique) {
         this.boutique = boutique;
     }
@@ -32,4 +34,7 @@ public class Points {
     public void setImg(int img) {
         this.img = img;
     }
+    public double getLatitude() {return latitude; }
+    public double getLongitude() {return longitude; }
+
 }
