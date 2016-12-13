@@ -64,19 +64,19 @@ public class PointsAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        Points points = myPoints[position];
+        final Points points = myPoints[position];
 
         holder.boutique.setText(points.getBoutique());
         holder.description.setText(points.getDescription());
         holder.img.setImageResource(points.getImg());
-//        holder.img.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(v.getContext(),PlaceActivity.class);
-////                intent.putExtra("Place", new Gson().toJson(place));
-//                v.getContext().startActivity(intent);
-//            }
-//        });
+        holder.img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),RedeemActivity.class);
+                intent.putExtra("Place", new Gson().toJson(points));
+                v.getContext().startActivity(intent);
+            }
+        });
 
         return convertView;
     }

@@ -13,7 +13,41 @@ public class MenFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         PlaceList p = new PlaceList();
+=======
+        Points first = new Points();
+        first.setBoutique("Lord Midas");
+        first.setImg(R.drawable.lordmidas);
+        first.setDescription("Insert Description Here");
+        first.setLocation(41.5871327,-93.6948199);
+
+        Points second = new Points();
+        second.setBoutique("Badowers");
+        second.setImg(R.drawable.badowers);
+        second.setDescription("Bringing the finest in men’s clothing to Des Moines for over 50 years, Badowers offers everything from exquisite suits to well-crafted denim. We’re an independent store for guys who love clothes. Fit and quality are our first priority. ");
+        second.setLocation(41.5860322,-93.7253725);
+
+        Points third = new Points();
+        third.setBoutique("G&L Clothing");
+        third.setImg(R.drawable.g_l);
+        third.setDescription(" Regular, Big and Tall, we’ve got it all! Whether in-store or online, G&L Clothing serves working men and women throughout Iowa and the world with work, casual and dress clothing from brands like Carhartt, Dickies, Levi’s®, Wrangler, Savane and much, much more. Our sizing selection is hard to beat with bottoms ranging from 26 to 80 inch waist and tops from Small to 10XL and 5XL Tall.");
+        third.setLocation(41.5864367,-93.7115168);
+
+        Points fourth = new Points();
+        fourth.setBoutique("The Backroom");
+        fourth.setImg(R.drawable.backrooom);
+        fourth.setDescription("The Backroom has evolved to providing the same service experience as our premiere stores and buying opportunities with vendors have offered our clients a real value on many of the industries best.");
+        fourth.setLocation(41.6182266,-93.7428565);
+        points = new Points[]{first, second};
+
+        Points fifth = new Points();
+        fifth.setBoutique("Mr. B");
+        fifth.setImg(R.drawable.mrb);
+        fifth.setDescription("Mr B continues to deliver exceptional service for 40 years in Des Moines and a level of quality clothing not found anywhere else in the midwest. Our on-site tailoring department is unmatched in the state of Iowa. We built our brand on customer service and high quality designer fashion clothing. We continue to believe that is what people need and want when shopping for clothing and that's how we do business every day.");
+        fifth.setLocation(41.6108579,-93.8058037);
+        PlaceList p = new PlaceList(getContext());
+>>>>>>> origin/master
         points = p.getMen();
 // if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);

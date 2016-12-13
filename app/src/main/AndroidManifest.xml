@@ -4,28 +4,33 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".PlaceActivity" />
         <activity android:name=".PointsActivity" />
-        <activity android:name=".WomenFragment" />
-        <activity android:name=".MenFragment" />
-        <activity android:name=".HomeGoodsFragment" />
-        <activity android:name=".PointsFragment" />
+        <!-- <activity android:name=".WomenFragment" /> -->
+        <!-- <activity android:name=".MenFragment" /> -->
+        <!-- <activity android:name=".HomeGoodsFragment" /> -->
+        <!-- <activity android:name=".PointsFragment" /> -->
         <activity android:name=".About" />
-        <activity android:name=".RedeemActivity"></activity>
+        <activity android:name=".RedeemActivity" />
+        <activity android:name=".CouponActivity"></activity>
     </application>
 
 </manifest>

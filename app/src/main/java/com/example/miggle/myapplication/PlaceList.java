@@ -1,15 +1,23 @@
 package com.example.miggle.myapplication;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Created by miggle on 12/12/16.
  */
 
 public class PlaceList {
-    private Points[] boutiques = new Points[15];
+    private SharedPreferences sharedPreferences;
+    private Points[] boutiques = new Points[14];
     private double user_lat;
     private double user_long;
-    public PlaceList() {
-
+    Context pref;
+    public PlaceList(Context c) {
+        this.pref = c;
         this.user_lat = user_lat;
         this.user_long = user_long;
 
@@ -110,9 +118,40 @@ public class PlaceList {
     {
         return new Points[]{boutiques[9],boutiques[10],boutiques[11],boutiques[12],boutiques[13]};
     }
+    // the bubble sort code was found at https://mathbits.com/MathBits/Java/arrays/Bubble.htm, I only modified it to suit my needs.
     public Points[] getAll()
     {
-        return boutiques;
+        sharedPreferences = pref.getSharedPreferences("MyPrefs", 0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+
+        Points[] copy = boutiques;
+        for(int i = 0; i < copy.length; i++)
+        {
+            int points =  sharedPreferences.getInt(copy[i].getBoutique(),0);
+            copy[i].setDescription(Integer.toString(points));
+            copy[i].setCount(points);
+        }
+
+        int j;
+        boolean flag = true;   // set flag to true to begin first pass
+        Points temp = new Points();   //holding variable
+        while ( flag )
+        {
+            flag= false;    //set flag to false awaiting a possible swap
+            for( j=0;  j < copy.length -1;  j++ )
+            {
+                if ( copy[ j ].getCount() < copy[j+1].getCount() )   // change to > for ascending sort
+                {
+                    temp = copy[ j ];                //swap elements
+                    copy[ j ] = copy[ j+1 ];
+                    copy[ j+1 ] = temp;
+                    flag = true;              //shows a swap occurred
+                }
+            }
+        }
+        return copy;
+
     }
     public void setUserLocation(double lat, double longi)
     {
