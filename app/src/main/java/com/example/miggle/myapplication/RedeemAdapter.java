@@ -63,6 +63,7 @@ public class RedeemAdapter extends BaseAdapter {
         holder.percentage.setText(redeem.getPercentage());
         holder.offer.setText(redeem.getOffer());
 
+
         return convertView;
     }
 

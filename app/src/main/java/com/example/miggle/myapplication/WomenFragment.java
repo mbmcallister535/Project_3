@@ -42,7 +42,7 @@ public class WomenFragment extends ListFragment {
         fifth.setImg(R.drawable.repeat);
         fifth.setDescription("Insert description here");
         fifth.setLocation(41.586732,-93.7403457);
-        PlaceList p = new PlaceList();
+        PlaceList p = new PlaceList(getContext());
 
         points = p.getWomen();
 //        if (points == null)

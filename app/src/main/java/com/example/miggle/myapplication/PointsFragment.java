@@ -83,7 +83,7 @@ public class PointsFragment extends ListFragment {
         fourteen.setBoutique("byDesign");
         fourteen.setImg(R.drawable.bydesign);
         fourteen.setDescription("Insert Description Here");
-        PlaceList p = new PlaceList();
+        PlaceList p = new PlaceList(getContext());
         points = p.getAll();
 //        if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);

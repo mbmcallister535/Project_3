@@ -6,6 +6,7 @@ package com.example.miggle.myapplication;
 
 public class Points {
     private String boutique;
+    private int count;
     private String description;
     private int img;
     private double latitude;
@@ -36,5 +37,13 @@ public class Points {
     }
     public double getLatitude() {return latitude; }
     public double getLongitude() {return longitude; }
+    public void setCount(int count)
+    {
+        this.count = count;
+    }
+    public int getCount()
+    {
+        return this.count;
+    }
 
 }

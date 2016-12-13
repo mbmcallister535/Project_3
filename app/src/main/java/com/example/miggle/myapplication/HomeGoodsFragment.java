@@ -37,7 +37,7 @@ public class HomeGoodsFragment extends ListFragment {
         fourth.setDescription("Insert Description Here");
         fourth.setLocation(41.6044827,-93.8070129);
 
-        PlaceList p = new PlaceList();
+        PlaceList p = new PlaceList(getContext());
         points = p.getHomeGoods();
 //        if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);
