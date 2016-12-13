@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:id="@+id/cell">
+    android:id="@+id/cell"
+    android:padding="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,20 +23,23 @@
             android:layout_height="70dp"
             android:id="@+id/description"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="40dp"
+            android:maxLines="5"
             android:ellipsize="end" />
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
-            android:layout_height="20sp"
+            android:layout_height="25sp"
             android:id="@+id/boutique"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:maxLines="2"
+            android:ellipsize="end" />
     </RelativeLayout>
 
 </LinearLayout>

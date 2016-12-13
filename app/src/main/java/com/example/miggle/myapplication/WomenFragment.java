@@ -21,7 +21,7 @@ public class WomenFragment extends ListFragment {
         Points second = new Points();
         second.setBoutique("Blond Genius");
         second.setImg(R.drawable.blondgenius);
-        second.setDescription("Blond Genius has jeans for every body. Our denim bar stocks over 150 styles of jeans for women and over 50 styles for men, all the jeans come in a wide variety of sizes and lengths. Pair your new jeans with our clothing, accessories and shoes, chosen from the trendiest fashions from New York to Los Angeles. ");
+        second.setDescription("Blond Genius has jeans for everybody. Our denim bar stocks over 150 styles of jeans for women and over 50 styles for men, all the jeans come in a wide variety of sizes and lengths. Pair your new jeans with our clothing, accessories and shoes, chosen from the trendiest fashions from New York to Los Angeles. ");
 
         Points third = new Points();
         third.setBoutique("Fun on 5th");
