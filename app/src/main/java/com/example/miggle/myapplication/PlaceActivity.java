@@ -25,6 +25,7 @@ import java.util.Date;
 
 public class PlaceActivity extends AppCompatActivity {
     ImageView bannerView;
+    TextView storeName;
     TextView checkInText;
     TextView scanText;
     static final int REQUEST_IMAGE_CAPUTRE = 1;
@@ -74,6 +75,8 @@ public class PlaceActivity extends AppCompatActivity {
         final Points place = new Gson().fromJson(activityPlaces,Points.class);
         bannerView = (ImageView) findViewById(R.id.bannerView);
         checkInText = (TextView) findViewById(R.id.checkIn);
+        storeName = (TextView) findViewById(R.id.storeName);
+        storeName.setText(place.getBoutique());
         locationView = (ImageView) findViewById(R.id.locationView);
         scanText = (TextView) findViewById(R.id.scanReceipt);
         scanReceipt = (ImageView) findViewById((R.id.postReceipt));
