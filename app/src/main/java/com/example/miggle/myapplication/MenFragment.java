@@ -16,7 +16,7 @@ public class MenFragment extends ListFragment {
         Points first = new Points();
         first.setBoutique("Lord Midas");
         first.setImg(R.drawable.lordmidas);
-        first.setDescription("Insert Description Here");
+        first.setDescription("Lord Midas is your go-to shop for high-end, fashion forward menswear to propel you further in both your career and your personal life.");
 
         Points second = new Points();
         second.setBoutique("Badowers");

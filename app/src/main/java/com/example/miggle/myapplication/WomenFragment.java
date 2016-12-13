@@ -36,7 +36,7 @@ public class WomenFragment extends ListFragment {
         Points fifth = new Points();
         fifth.setBoutique("Repeat Boutique");
         fifth.setImg(R.drawable.repeat);
-        fifth.setDescription("Insert description here");
+        fifth.setDescription("Repeat Boutique has all the best trends from the past, brought forward and presented in a fashionable, chic way.");
 
         points = new Points[]{first, second,third,fourth,fifth};
 //        if (points == null)

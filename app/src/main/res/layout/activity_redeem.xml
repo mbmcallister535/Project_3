@@ -17,7 +17,7 @@
             android:layout_height="70dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/header"
+            android:id="@+id/storeName"
             android:paddingTop="20dp"
             android:textAlignment="center"
             android:textSize="26sp"

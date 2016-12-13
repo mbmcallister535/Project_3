@@ -16,22 +16,22 @@ public class HomeGoodsFragment extends ListFragment {
         Points first = new Points();
         first.setBoutique("Back Allet Bargain");
         first.setImg(R.drawable.backalletbargain);
-        first.setDescription("Insert Description Here");
+        first.setDescription("Back Allet Bargain is a one-stop shop for all the strange and wondrous knick-knacks you could ever want.");
 
         Points second = new Points();
         second.setBoutique("Funky Find");
         second.setImg(R.drawable.funkyfind);
-        second.setDescription("Insert Description Here");
+        second.setDescription("Funky Find is a fresh take on home goods, offering a playful, whimsical assortment of products.");
 
         Points third = new Points();
         third.setBoutique(("Hinge"));
         third.setImg(R.drawable.hinge);
-        third.setDescription("Insert Description Here");
+        third.setDescription("Here at Hinge, we sell only locally crafted furniture. #buylocal");
 
         Points fourth = new Points();
         fourth.setBoutique("byDesign");
         fourth.setImg(R.drawable.bydesign);
-        fourth.setDescription("Insert Description Here");
+        fourth.setDescription("Shop at byDesign for all of your modern, sleek furniture needs!");
 
         points = new Points[]{first, second,third,fourth};
 //        if (points == null)
