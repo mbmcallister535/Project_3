@@ -5,10 +5,6 @@
     android:id="@+id/activity_place"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.miggle.myapplication.PlaceActivity">
 
     <ImageView
@@ -19,46 +15,81 @@
         android:id="@+id/locationView"
         android:layout_alignBottom="@+id/bannerView"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="10dp" />
+        android:elevation="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/description" />
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/review"
-        android:id="@+id/reviewitem"
-        android:layout_below="@+id/postPhoto"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/postphoto"
-        android:id="@+id/postPhoto"
-        android:layout_below="@+id/postitem"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/postitem"
-        android:id="@+id/postitem"
-        android:layout_below="@+id/checkinView"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
         app:srcCompat="@drawable/badowers"
         android:id="@+id/bannerView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_alignEnd="@+id/storeName"
+        android:contentDescription="@string/description" />
 
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/checkin"
+        app:srcCompat="@drawable/location"
         android:id="@+id/checkinView"
+        android:layout_alignParentStart="false"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/bannerView"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:text="@string/checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_alignBottom="@+id/checkinView"
+        android:layout_toEndOf="@+id/checkinView"
+        android:layout_marginStart="10dp"
+        android:id="@+id/checkIn"
+        android:textSize="26sp"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/loyalty"
+        android:layout_below="@+id/checkIn"
+        android:layout_marginTop="15dp"
+        android:id="@+id/postReceipt"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:text="@string/postreceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/postReceipt"
+        android:layout_marginStart="10dp"
+        android:id="@+id/scanReceipt"
+        android:layout_toEndOf="@+id/postReceipt"
+        android:textSize="25sp"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <TextView
+        android:text="@string/about"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/storeName"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@color/themeColor"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

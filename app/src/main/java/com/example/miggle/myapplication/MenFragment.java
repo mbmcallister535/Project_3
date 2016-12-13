@@ -13,6 +13,9 @@ public class MenFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
+        PlaceList p = new PlaceList();
+=======
         Points first = new Points();
         first.setBoutique("Lord Midas");
         first.setImg(R.drawable.lordmidas);
@@ -44,6 +47,7 @@ public class MenFragment extends ListFragment {
         fifth.setDescription("Mr B continues to deliver exceptional service for 40 years in Des Moines and a level of quality clothing not found anywhere else in the midwest. Our on-site tailoring department is unmatched in the state of Iowa. We built our brand on customer service and high quality designer fashion clothing. We continue to believe that is what people need and want when shopping for clothing and that's how we do business every day.");
         fifth.setLocation(41.6108579,-93.8058037);
         PlaceList p = new PlaceList(getContext());
+>>>>>>> origin/master
         points = p.getMen();
 // if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);

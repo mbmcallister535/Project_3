@@ -24,31 +24,31 @@ public class PlaceList {
         boutiques[0] = new Points();
         boutiques[0].setBoutique("Back Alley Bargains");
         boutiques[0].setImg(R.drawable.backalletbargain);
-        boutiques[0].setDescription("Insert Description Here");
+        boutiques[0].setDescription("Back Allet Bargain is a one-stop shop for all the strange and wondrous knick-knacks you could ever want.");
         boutiques[0].setLocation(41.5815043, -93.7168694);
 
         boutiques[1] = new Points();
         boutiques[1].setBoutique("Funky Find");
         boutiques[1].setImg(R.drawable.funkyfind);
-        boutiques[1].setDescription("Insert Description Here");
+        boutiques[1].setDescription("Funky Find is a fresh take on home goods, offering a playful, whimsical assortment of products.");
         boutiques[1].setLocation(42.9892343, -81.3006206);
 
         boutiques[2] = new Points();
         boutiques[2].setBoutique(("Hinge"));
         boutiques[2].setImg(R.drawable.hinge);
-        boutiques[2].setDescription("Insert Description Here");
+        boutiques[2].setDescription("Here at Hinge, we sell only locally crafted furniture. #buylocal");
         boutiques[2].setLocation(41.5731856, -93.7785209);
 
         boutiques[3] = new Points();
         boutiques[3].setBoutique("byDesign");
         boutiques[3].setImg(R.drawable.bydesign);
-        boutiques[3].setDescription("Insert Description Here");
+        boutiques[3].setDescription("Shop at byDesign for all of your modern, sleek furniture needs!");
         boutiques[3].setLocation(41.6044827, -93.8070129);
 
         boutiques[4] = new Points();
         boutiques[4].setBoutique("Lord Midas");
         boutiques[4].setImg(R.drawable.lordmidas);
-        boutiques[4].setDescription("Insert Description Here");
+        boutiques[4].setDescription("Lord Midas is your go-to shop for high-end, fashion forward menswear to propel you further in both your career and your personal life.");
         boutiques[4].setLocation(41.5871327,-93.6948199);
 
         boutiques[5] = new Points();
@@ -102,7 +102,7 @@ public class PlaceList {
         boutiques[13] = new Points();
         boutiques[13].setBoutique("Repeat Boutique");
         boutiques[13].setImg(R.drawable.repeat);
-        boutiques[13].setDescription("Insert description here");
+        boutiques[13].setDescription("Repeat Boutique has all the best trends from the past, brought forward and presented in a fashionable, chic way.");
         boutiques[13].setLocation(41.586732,-93.7403457);
 
     }
