@@ -13,7 +13,9 @@ public class MenFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         PlaceList p = new PlaceList(getContext());
+
         points = p.getMen();
 // if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);

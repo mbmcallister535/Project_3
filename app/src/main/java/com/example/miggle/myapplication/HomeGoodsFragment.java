@@ -15,7 +15,9 @@ public class HomeGoodsFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         PlaceList p = new PlaceList(getContext());
+
         points = p.getHomeGoods();
+
 //        if (points == null)
 //            return inflater.inflate(R.layout.points_fragment, container,false);
         View myView = inflater.inflate(R.layout.home_goods_fragment, container,false);
